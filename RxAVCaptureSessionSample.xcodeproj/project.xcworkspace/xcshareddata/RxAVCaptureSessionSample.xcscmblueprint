@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "23F606B53083939B95584C9485412281691E6A0B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E560E6ACB8E31608C0FCFB2FBE6409593B0D5E9A" : 0,
+    "30EF092B0921B75549B5D775F06D4290D175D4AE" : 0,
+    "23F606B53083939B95584C9485412281691E6A0B" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DAEB04F9-909E-4105-B8AA-CF1A0EBB734E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E560E6ACB8E31608C0FCFB2FBE6409593B0D5E9A" : "RxAVCaptureSessionSample\/RxAVCaptureSessionSample\/Extension\/RxCaptureMetadataOutputObjectsDelegateProxy\/",
+    "30EF092B0921B75549B5D775F06D4290D175D4AE" : "RxAVCaptureSessionSample\/RxAVCaptureSessionSample\/Extension\/AVCaptureSession+Rx\/",
+    "23F606B53083939B95584C9485412281691E6A0B" : "RxAVCaptureSessionSample\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RxAVCaptureSessionSample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RxAVCaptureSessionSample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hoppenichu\/RxAVCaptureSessionSample.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "23F606B53083939B95584C9485412281691E6A0B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/gist.github.com\/40db6906a546bf2ef91b.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "30EF092B0921B75549B5D775F06D4290D175D4AE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/gist.github.com\/4e8a3eef8989b3d5c039.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E560E6ACB8E31608C0FCFB2FBE6409593B0D5E9A"
+    }
+  ]
+}

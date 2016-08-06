@@ -1,25 +1,114 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bim-lP-aXw">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Menu-->
+        <scene sceneID="oZt-NV-gbr">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController title="Menu" id="Odg-wX-l7c" customClass="MenuTableViewController" customModule="RxAVCaptureSessionSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="k5G-Dt-b8G">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="uvQ-VP-daQ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="pIq-PU-IMn" style="IBUITableViewCellStyleDefault" id="RP9-X8-4ux">
+                                        <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RP9-X8-4ux" id="stP-eF-Gbr">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="QR Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pIq-PU-IMn">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Odg-wX-l7c" id="pq8-tm-qZR"/>
+                            <outlet property="delegate" destination="Odg-wX-l7c" id="zih-CN-o7f"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="pHN-UM-SC9"/>
+                    <connections>
+                        <segue destination="Xnl-Bw-eKZ" kind="show" identifier="QRCodeCaptureViewController" id="8OW-gI-8is"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BUC-ae-gae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1465" y="1175"/>
+        </scene>
+        <!--Code Capture View Controller-->
+        <scene sceneID="fH9-K3-OgV">
+            <objects>
+                <viewController id="Xnl-Bw-eKZ" customClass="QRCodeCaptureViewController" customModule="RxAVCaptureSessionSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nFZ-If-Du2"/>
+                        <viewControllerLayoutGuide type="bottom" id="ii4-5r-g2a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9az-ZO-aAP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y4D-Cf-hFZ" customClass="AVCaptureVideoPreviewView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQ1-3f-dcA">
+                                <rect key="frame" x="300" y="300" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ii4-5r-g2a" firstAttribute="top" secondItem="Y4D-Cf-hFZ" secondAttribute="bottom" id="0UK-9a-NXX"/>
+                            <constraint firstItem="QQ1-3f-dcA" firstAttribute="centerX" secondItem="9az-ZO-aAP" secondAttribute="centerX" id="8xF-nN-rLP"/>
+                            <constraint firstItem="Y4D-Cf-hFZ" firstAttribute="leading" secondItem="9az-ZO-aAP" secondAttribute="leading" id="BFd-GT-O5P"/>
+                            <constraint firstAttribute="trailing" secondItem="Y4D-Cf-hFZ" secondAttribute="trailing" id="HAq-cc-YBC"/>
+                            <constraint firstItem="QQ1-3f-dcA" firstAttribute="centerY" secondItem="9az-ZO-aAP" secondAttribute="centerY" id="jVX-qj-UgP"/>
+                            <constraint firstItem="Y4D-Cf-hFZ" firstAttribute="top" secondItem="nFZ-If-Du2" secondAttribute="bottom" id="sTz-dn-6dM"/>
+                            <constraint firstItem="QQ1-3f-dcA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9az-ZO-aAP" secondAttribute="leading" constant="12" id="ueP-ht-IYO"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QQ1-3f-dcA" secondAttribute="trailing" constant="12" id="x2a-yM-1Vv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="Y4D-Cf-hFZ" id="lED-aQ-IUj"/>
+                        <outlet property="qrCodeValueLabel" destination="QQ1-3f-dcA" id="hs1-pf-WEi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bqZ-66-QVU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2301" y="505"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wGC-n6-9wi">
+            <objects>
+                <navigationController id="Bim-lP-aXw" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VvZ-jO-faY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Odg-wX-l7c" kind="relationship" relationship="rootViewController" id="sF2-wv-idi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btI-9h-42m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="1175"/>
         </scene>
     </scenes>
 </document>
