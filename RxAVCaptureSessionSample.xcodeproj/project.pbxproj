@@ -8,20 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		001CAD5F1D5388060080E2FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001CAD5E1D5388060080E2FD /* AppDelegate.swift */; };
-		001CAD611D5388060080E2FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001CAD601D5388060080E2FD /* ViewController.swift */; };
 		001CAD641D5388060080E2FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001CAD621D5388060080E2FD /* Main.storyboard */; };
 		001CAD661D5388060080E2FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001CAD651D5388060080E2FD /* Assets.xcassets */; };
 		001CAD691D5388060080E2FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001CAD671D5388060080E2FD /* LaunchScreen.storyboard */; };
+		001CAD751D538CB70080E2FD /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001CAD731D538CB70080E2FD /* RxCocoa.framework */; };
+		001CAD761D538CB70080E2FD /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001CAD741D538CB70080E2FD /* RxSwift.framework */; };
+		001CAD791D538D330080E2FD /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001CAD781D538D330080E2FD /* MenuTableViewController.swift */; };
+		001CAD7E1D5391850080E2FD /* QRCodeCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001CAD7D1D5391850080E2FD /* QRCodeCaptureViewController.swift */; };
+		001CAD841D5394770080E2FD /* AVCaptureVideoPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 001CAD831D5394770080E2FD /* AVCaptureVideoPreviewView.m */; };
+		001CAD881D53B3EB0080E2FD /* AVCaptureSession+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001CAD861D53B3EA0080E2FD /* AVCaptureSession+Rx.swift */; };
+		001CAD891D53B3EB0080E2FD /* RxBindingObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001CAD871D53B3EB0080E2FD /* RxBindingObserver.swift */; };
+		001CAD8B1D53B4970080E2FD /* RxCaptureMetadataOutputObjectsDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001CAD8A1D53B4970080E2FD /* RxCaptureMetadataOutputObjectsDelegateProxy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		001CAD5B1D5388060080E2FD /* RxAVCaptureSessionSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxAVCaptureSessionSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		001CAD5E1D5388060080E2FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		001CAD601D5388060080E2FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		001CAD631D5388060080E2FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		001CAD651D5388060080E2FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		001CAD681D5388060080E2FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		001CAD6A1D5388060080E2FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		001CAD731D538CB70080E2FD /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		001CAD741D538CB70080E2FD /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		001CAD781D538D330080E2FD /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		001CAD7D1D5391850080E2FD /* QRCodeCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeCaptureViewController.swift; sourceTree = "<group>"; };
+		001CAD811D5394770080E2FD /* RxAVCaptureSessionSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RxAVCaptureSessionSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		001CAD821D5394770080E2FD /* AVCaptureVideoPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCaptureVideoPreviewView.h; sourceTree = "<group>"; };
+		001CAD831D5394770080E2FD /* AVCaptureVideoPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCaptureVideoPreviewView.m; sourceTree = "<group>"; };
+		001CAD861D53B3EA0080E2FD /* AVCaptureSession+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AVCaptureSession+Rx.swift"; path = "AVCaptureSession+Rx/AVCaptureSession+Rx.swift"; sourceTree = "<group>"; };
+		001CAD871D53B3EB0080E2FD /* RxBindingObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RxBindingObserver.swift; path = "AVCaptureSession+Rx/RxBindingObserver.swift"; sourceTree = "<group>"; };
+		001CAD8A1D53B4970080E2FD /* RxCaptureMetadataOutputObjectsDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RxCaptureMetadataOutputObjectsDelegateProxy.swift; path = RxCaptureMetadataOutputObjectsDelegateProxy/RxCaptureMetadataOutputObjectsDelegateProxy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				001CAD761D538CB70080E2FD /* RxSwift.framework in Frameworks */,
+				001CAD751D538CB70080E2FD /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +56,7 @@
 		001CAD521D5388060080E2FD = {
 			isa = PBXGroup;
 			children = (
+				001CAD701D5389790080E2FD /* Carthage */,
 				001CAD5D1D5388060080E2FD /* RxAVCaptureSessionSample */,
 				001CAD5C1D5388060080E2FD /* Products */,
 			);
@@ -54,14 +73,54 @@
 		001CAD5D1D5388060080E2FD /* RxAVCaptureSessionSample */ = {
 			isa = PBXGroup;
 			children = (
+				001CAD811D5394770080E2FD /* RxAVCaptureSessionSample-Bridging-Header.h */,
 				001CAD5E1D5388060080E2FD /* AppDelegate.swift */,
-				001CAD601D5388060080E2FD /* ViewController.swift */,
 				001CAD621D5388060080E2FD /* Main.storyboard */,
-				001CAD651D5388060080E2FD /* Assets.xcassets */,
 				001CAD671D5388060080E2FD /* LaunchScreen.storyboard */,
+				001CAD651D5388060080E2FD /* Assets.xcassets */,
 				001CAD6A1D5388060080E2FD /* Info.plist */,
+				001CAD7A1D538E5F0080E2FD /* Extension */,
+				001CAD721D538A9D0080E2FD /* View */,
+				001CAD711D538A650080E2FD /* ViewController */,
 			);
 			path = RxAVCaptureSessionSample;
+			sourceTree = "<group>";
+		};
+		001CAD701D5389790080E2FD /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				001CAD731D538CB70080E2FD /* RxCocoa.framework */,
+				001CAD741D538CB70080E2FD /* RxSwift.framework */,
+			);
+			path = Carthage;
+			sourceTree = "<group>";
+		};
+		001CAD711D538A650080E2FD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				001CAD781D538D330080E2FD /* MenuTableViewController.swift */,
+				001CAD7D1D5391850080E2FD /* QRCodeCaptureViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		001CAD721D538A9D0080E2FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				001CAD821D5394770080E2FD /* AVCaptureVideoPreviewView.h */,
+				001CAD831D5394770080E2FD /* AVCaptureVideoPreviewView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		001CAD7A1D538E5F0080E2FD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				001CAD861D53B3EA0080E2FD /* AVCaptureSession+Rx.swift */,
+				001CAD871D53B3EB0080E2FD /* RxBindingObserver.swift */,
+				001CAD8A1D53B4970080E2FD /* RxCaptureMetadataOutputObjectsDelegateProxy.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +133,7 @@
 				001CAD571D5388060080E2FD /* Sources */,
 				001CAD581D5388060080E2FD /* Frameworks */,
 				001CAD591D5388060080E2FD /* Resources */,
+				001CAD771D538CC60080E2FD /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -131,13 +191,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		001CAD771D538CC60080E2FD /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		001CAD571D5388060080E2FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				001CAD611D5388060080E2FD /* ViewController.swift in Sources */,
+				001CAD881D53B3EB0080E2FD /* AVCaptureSession+Rx.swift in Sources */,
+				001CAD791D538D330080E2FD /* MenuTableViewController.swift in Sources */,
+				001CAD7E1D5391850080E2FD /* QRCodeCaptureViewController.swift in Sources */,
+				001CAD841D5394770080E2FD /* AVCaptureVideoPreviewView.m in Sources */,
 				001CAD5F1D5388060080E2FD /* AppDelegate.swift in Sources */,
+				001CAD891D53B3EB0080E2FD /* RxBindingObserver.swift in Sources */,
+				001CAD8B1D53B4970080E2FD /* RxCaptureMetadataOutputObjectsDelegateProxy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,10 +334,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxAVCaptureSessionSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoppenichu.RxAVCaptureSessionSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RxAVCaptureSessionSample/RxAVCaptureSessionSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -261,10 +355,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxAVCaptureSessionSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoppenichu.RxAVCaptureSessionSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RxAVCaptureSessionSample/RxAVCaptureSessionSample-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -287,6 +390,7 @@
 				001CAD6F1D5388060080E2FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

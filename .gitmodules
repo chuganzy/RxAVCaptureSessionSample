@@ -1,0 +1,6 @@
+[submodule "RxAVCaptureSessionSample/Extension/AVCaptureSession+Rx"]
+	path = RxAVCaptureSessionSample/Extension/AVCaptureSession+Rx
+	url = https://gist.github.com/40db6906a546bf2ef91b.git
+[submodule "RxAVCaptureSessionSample/Extension/RxCaptureMetadataOutputObjectsDelegateProxy"]
+	path = RxAVCaptureSessionSample/Extension/RxCaptureMetadataOutputObjectsDelegateProxy
+	url = https://gist.github.com/4e8a3eef8989b3d5c039.git
